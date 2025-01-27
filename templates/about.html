@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>About Us</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,8 +44,9 @@
         <a href="/shop">Shop</a>
     </nav>
     <div class="container">
-        <h2>Welcome to the Home Page</h2>
-        <p>This is the home page of your Flask web application.</p>
+        <h2>About Us</h2>
+        <img src="{{ page_data['picture']['data']['url'] }}" alt="Page Picture">
+        <p>{{ page_data['about'] }}</p>
     </div>
     <footer>
         <p>&copy; 2023 My Online Shop</p>
